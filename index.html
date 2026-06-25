@@ -406,12 +406,17 @@
                 </div>
 
                 <div class="card">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Your Name" />
-                        <input type="email" placeholder="Your Email" />
-                        <textarea placeholder="Write your message here..."></textarea>
-                        <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Send
-                            Message</button>
+                   <form class="contact-form" id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit" class="btn btn-primary" id="send-btn"
+                            style="border:none; cursor:pointer;">
+                            Send Message
+                        </button>
+
+                        <p id="form-status" style="margin-top:10px; font-size:14px;"></p>
                     </form>
                 </div>
             </div>
